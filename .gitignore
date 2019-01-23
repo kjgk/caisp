@@ -1,0 +1,6 @@
+.idea/
+*.iml
+signboard-core/target/
+signboard-web/target/
+signboard-web/src/main/resources/public/
+signboard-web/src/main/resources/static/
