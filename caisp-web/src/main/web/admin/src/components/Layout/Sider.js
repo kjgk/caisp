@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { config } from 'utils'
-import styles from './Layout.less'
+import { config } from '../../utils'
+import styles from './Layout.module.less'
 import Menus from './Menu'
 
 const Sider = ({

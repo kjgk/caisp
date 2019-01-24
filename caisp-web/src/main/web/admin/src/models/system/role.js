@@ -1,6 +1,5 @@
-import { config } from 'utils'
-import roleService from 'services/system/role'
-import menuService from 'services/system/menu'
+import roleService from '../../services/system/role'
+import menuService from '../../services/system/menu'
 import modelExtend from 'dva-model-extend'
 import { createCrudModel } from '../common'
 import { message } from 'antd/lib/index'

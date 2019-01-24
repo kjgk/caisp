@@ -1,5 +1,5 @@
 import { routerRedux } from 'dva/router'
-import { login } from 'services/app'
+import { login } from '../services/app'
 import { model } from './common'
 import modelExtend from 'dva-model-extend'
 

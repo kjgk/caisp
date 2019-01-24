@@ -1,5 +1,4 @@
-import { config } from 'utils'
-import service from 'services/system/authority'
+import service from '../../services/system/authority'
 import { createCrudModel } from '../common'
 
 const namespace = 'authority'

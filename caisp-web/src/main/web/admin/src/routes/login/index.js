@@ -2,9 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'dva'
 import { Alert, Button, Form, Input, Row } from 'antd'
-import { config } from 'utils'
-import styles from './index.less'
-
+import styles from './index.module.less'
 const FormItem = Form.Item
 
 const Login = ({
@@ -16,6 +14,7 @@ const Login = ({
                    validateFieldsAndScroll,
                  },
                }) => {
+
   function handleOk () {
     validateFieldsAndScroll((errors, { username, password }) => {
       if (errors) {

@@ -97,7 +97,7 @@ const createCrudModel = function (namespace, pathname, {query, get, create, upda
               pagination: {
                 current: Number(payload.page) || 1,
                 pageSize: Number(payload.pageSize) || 10,
-                total: totalElements,
+                total: typeof totalElements === 'string' ? parseInt(totalElements, 10) : totalElements,
               },
             },
           })
@@ -246,7 +246,7 @@ const createTreeModel = function (namespace, pathname, {query, get, create, upda
             yield put({
               type: 'query',
               payload: {
-                id: 'Root',
+                id: -1,
               },
             })
           } else {
@@ -458,7 +458,7 @@ const createTreeModel = function (namespace, pathname, {query, get, create, upda
           return {
             ...state,
             treeData: newData,
-            expandedKeys,
+            expandedKeys: [...expandedKeys],  // https://github.com/react-component/tree/issues/203
           }
         }
         treeNode.children = newData
@@ -471,7 +471,7 @@ const createTreeModel = function (namespace, pathname, {query, get, create, upda
   })
 }
 
-module.exports = {
+export {
   model,
   pageModel,
   createCrudModel,

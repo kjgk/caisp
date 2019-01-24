@@ -1,5 +1,5 @@
 import {stringify} from 'qs'
-import {config, request} from 'utils'
+import {config, request} from '../utils'
 
 const {apiPrefix} = config
 
@@ -70,4 +70,4 @@ const createTreeService = function (path) {
   }
 }
 
-module.exports = {createCrudService, createTreeService}
+export {createCrudService, createTreeService}

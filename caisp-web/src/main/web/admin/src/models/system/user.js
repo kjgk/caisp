@@ -1,5 +1,4 @@
-import { config } from 'utils'
-import service from 'services/system/user'
+import service from '../../services/system/user'
 import { createCrudModel } from '../common'
 import modelExtend from 'dva-model-extend'
 import { message } from 'antd/lib/index'

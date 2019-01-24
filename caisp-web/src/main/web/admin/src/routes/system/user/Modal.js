@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Form, Input, Modal, Select } from 'antd'
-import RoleSelect from 'sections/role/RoleSelect'
+import RoleSelect from '../../../sections/role/RoleSelect'
 
 const formItemLayout = {
   labelCol: {

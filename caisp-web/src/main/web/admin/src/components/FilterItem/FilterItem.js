@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styles from './FilterItem.less'
+import styles from './FilterItem.module.less'
 
 const FilterItem = ({
   label = '',

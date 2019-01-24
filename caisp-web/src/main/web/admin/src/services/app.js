@@ -1,5 +1,5 @@
 import { stringify } from 'qs'
-import { config, request } from 'utils'
+import { config, request } from '../utils'
 
 const { api } = config
 const { userLogout, userLogin, currentInfo } = api

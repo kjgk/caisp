@@ -1,5 +1,4 @@
-import { config } from 'utils'
-import service from 'services/system/menu'
+import service from '../../services/system/menu'
 import { createTreeModel } from '../common'
 
 const namespace = 'menu'

@@ -1,8 +1,12 @@
+/* global window */
+/* global document */
+/* global location */
+/* eslint no-restricted-globals: ["error", "event"] */
+
 import dva from 'dva'
 import createLoading from 'dva-loading'
 import createHistory from 'history/createBrowserHistory'
-import 'babel-polyfill'
-import { contentPath } from 'utils/config'
+import { contentPath } from './utils/config'
 
 const development = process.env.NODE_ENV === 'development'
 
@@ -18,10 +22,10 @@ const app = dva({
 })
 
 // 2. Model
-app.model(require('./models/app'))
+app.model(require('./models/app').default)
 
 // 3. Router
-app.router(require('./router'))
+app.router(require('./router').default)
 
 // 4. Start
 app.start('#root')

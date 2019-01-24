@@ -1,5 +1,4 @@
-import { config } from 'utils'
-import service from 'services/project/region'
+import service from '../../services/project/region'
 import { createCrudModel } from '../common'
 
 const namespace = 'region'

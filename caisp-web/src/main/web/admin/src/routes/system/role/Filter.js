@@ -1,7 +1,5 @@
-/* global document */
 import React from 'react'
 import PropTypes from 'prop-types'
-import { FilterItem } from 'components'
 import { Button, Col, Form, Input, Row } from 'antd'
 
 const { Search } = Input

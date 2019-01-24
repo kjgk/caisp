@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Divider, Modal, Table } from 'antd'
-import { DropOption, Formatter } from 'components'
-import { Link } from 'react-router-dom'
+import { Formatter } from '../../../components'
 import queryString from 'query-string'
 
 const List = ({ onDeleteItem, onEditItem, onEditAccount, location, ...tableProps }) => {

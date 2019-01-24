@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Form, Input, Modal } from 'antd'
-import AuthorityCheckbox from 'sections/authority/AuthorityCheckbox'
+import AuthorityCheckbox from '../../../sections/authority/AuthorityCheckbox'
 
 const formItemLayout = {
   labelCol: {

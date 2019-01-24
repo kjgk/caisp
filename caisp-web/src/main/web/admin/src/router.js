@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Redirect, Route, routerRedux, Switch } from 'dva/router'
 import dynamic from 'dva/dynamic'
-import App from 'routes/app'
+import App from './routes/app'
 import { LocaleProvider } from 'antd'
 import zh_CN from 'antd/lib/locale-provider/zh_CN'
 
@@ -50,29 +50,9 @@ const Routers = function ({ history, app }) {
       component: () => import('./routes/system/user/'),
     },
     {
-      path: '/project/operateType',
-      models: () => [import('./models/project/operateType')],
-      component: () => import('./routes/project/operateType/'),
-    },
-    {
       path: '/project/region',
       models: () => [import('./models/project/region')],
       component: () => import('./routes/project/region/'),
-    },
-    {
-      path: '/project/area',
-      models: () => [import('./models/project/area')],
-      component: () => import('./routes/project/area/'),
-    },
-    {
-      path: '/project/road',
-      models: () => [import('./models/project/road')],
-      component: () => import('./routes/project/road/'),
-    },
-    {
-      path: '/project/merchant',
-      models: () => [import('./models/project/merchant')],
-      component: () => import('./routes/project/merchant/'),
     },
   ]
 
@@ -81,7 +61,7 @@ const Routers = function ({ history, app }) {
       <LocaleProvider locale={zh_CN}>
         <App>
           <Switch>
-            <Route exact path="/project" render={() => <Redirect to="/project/operateType"/>}/>
+            <Route exact path="/project" render={() => <Redirect to="/project/region"/>}/>
             <Route exact path="/system" render={() => <Redirect to="/system/role"/>}/>
             {
               routes.map(({ path, ...dynamics }, key) => (

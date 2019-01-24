@@ -4,10 +4,10 @@ import PropTypes from 'prop-types'
 import { connect } from 'dva/index'
 import queryString from 'query-string'
 import { routerRedux } from 'dva/router'
-import { Page, Util } from 'components'
+import { Page, Util } from '../../../components'
 import Form from './Form'
 import { Modal } from 'antd/lib/index'
-import styles from 'components/Page/Page.less'
+import styles from '../../../components/Page/Page.module.less'
 
 const namespace = 'code'
 

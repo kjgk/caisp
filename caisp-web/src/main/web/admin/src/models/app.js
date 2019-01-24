@@ -4,9 +4,9 @@
 /* eslint no-restricted-globals: ["error", "event"] */
 
 import { routerRedux } from 'dva/router'
-import config from 'config'
-import { logout, query } from 'services/app'
-import * as menusService from 'services/menus'
+import {config} from '../utils'
+import { logout, query } from '../services/app'
+import * as menusService from '../services/menus'
 import queryString from 'query-string'
 
 const { prefix } = config

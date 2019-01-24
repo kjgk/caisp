@@ -5,9 +5,9 @@ import NProgress from 'nprogress'
 import PropTypes from 'prop-types'
 import pathToRegexp from 'path-to-regexp'
 import { connect } from 'dva'
-import { Loader, MyLayout } from 'components'
+import { Loader, MyLayout } from '../components'
 import { BackTop, Layout } from 'antd'
-import { classnames, config } from 'utils'
+import { classnames, config } from '../utils'
 import { Helmet } from 'react-helmet'
 import { withRouter } from 'dva/router'
 import Error from './error'
@@ -93,7 +93,7 @@ const App = ({
     <div>
       <Loader fullScreen spinning={loading.effects['app/query']} />
       <Helmet>
-        <title>商业门面普查-后台管理</title>
+        <title>绿化市容主题库-后台管理</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
 

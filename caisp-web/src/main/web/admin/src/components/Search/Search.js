@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ReactDOM from 'react-dom'
 import { Input, Select, Button, Icon } from 'antd'
-import styles from './Search.less'
+import styles from './Search.module.less'
 
 class Search extends React.Component {
   state = {

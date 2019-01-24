@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Select } from 'antd'
-import service from '../../services/project/region'
+import service from '../../services/system/code'
 
 const Option = Select.Option
 
-class RegionSelect extends React.Component {
+class CodeSelect extends React.Component {
 
   constructor (props) {
     super(props)
@@ -18,7 +18,7 @@ class RegionSelect extends React.Component {
 
   async fetchList () {
     this.setState({
-      list: await service.list(),
+      list: await service.query({tag: this.props.tag}),
     })
   }
 
@@ -38,11 +38,12 @@ class RegionSelect extends React.Component {
   }
 }
 
-RegionSelect.propTypes = {
+CodeSelect.propTypes = {
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   onChange: PropTypes.func,
   allowClear: PropTypes.bool,
   placeholder: PropTypes.string,
+  tag: PropTypes.string,
 }
 
-export default RegionSelect
+export default CodeSelect

@@ -1,9 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'dva'
-import {Alert, Button, Form, Input, Row} from 'antd'
-import styles from './index.less'
-
 
 const Home = ({
                 home,

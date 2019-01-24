@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Select } from 'antd'
-import service from '../../services/project/region'
+import service from '../../services/system/role'
 
 const Option = Select.Option
 
-class RegionSelect extends React.Component {
+class RoleSelect extends React.Component {
 
   constructor (props) {
     super(props)
@@ -28,8 +28,6 @@ class RegionSelect extends React.Component {
               onChange={this.props.onChange}
               placeholder={this.props.placeholder}
               allowClear={this.props.allowClear}
-              showSearch={this.props.showSearch}
-              optionFilterProp="children"
               style={{ width: '100%' }}
       >
         {this.state.list.map((item) => <Option value={item.objectId} key={item.objectId}>{item.name}</Option>)}
@@ -38,11 +36,11 @@ class RegionSelect extends React.Component {
   }
 }
 
-RegionSelect.propTypes = {
+RoleSelect.propTypes = {
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   onChange: PropTypes.func,
   allowClear: PropTypes.bool,
   placeholder: PropTypes.string,
 }
 
-export default RegionSelect
+export default RoleSelect
