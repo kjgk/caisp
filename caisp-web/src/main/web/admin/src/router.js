@@ -4,7 +4,7 @@ import { Redirect, Route, routerRedux, Switch } from 'dva/router'
 import dynamic from 'dva/dynamic'
 import App from './routes/app'
 import { LocaleProvider } from 'antd'
-import zh_CN from 'antd/lib/locale-provider/zh_CN'
+import zh_CN from 'antd/es/locale-provider/zh_CN'
 
 const { ConnectedRouter } = routerRedux
 

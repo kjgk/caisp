@@ -1,6 +1,5 @@
 import React from 'react'
-import { Tree } from 'antd/lib/index'
-import { Icon } from 'antd'
+import { Icon, Tree } from 'antd'
 
 const TreeNode = Tree.TreeNode
 

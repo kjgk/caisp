@@ -1,7 +1,7 @@
 import service from '../../services/system/user'
 import { createCrudModel } from '../common'
 import modelExtend from 'dva-model-extend'
-import { message } from 'antd/lib/index'
+import { message } from 'antd'
 
 const namespace = 'user'
 const pathname = '/system/user'

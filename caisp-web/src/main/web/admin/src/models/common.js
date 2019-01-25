@@ -1,7 +1,7 @@
 import modelExtend from 'dva-model-extend'
 import queryString from 'query-string'
 import uuid from 'uuid/v4'
-import {message} from 'antd/lib/index'
+import {message} from 'antd'
 
 const usageMessage = '数据已被使用，无法删除！'
 

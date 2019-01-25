@@ -6,7 +6,7 @@ import queryString from 'query-string'
 import { routerRedux } from 'dva/router'
 import { Page, Util } from '../../../components'
 import Form from './Form'
-import { Modal } from 'antd/lib/index'
+import { Modal } from 'antd'
 import styles from '../../../components/Page/Page.module.less'
 
 const namespace = 'menu'
